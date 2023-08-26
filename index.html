@@ -22,15 +22,45 @@
               <li class="header__nav__item">Search</li>
               <li class="header__nav__item">Products</li>
             </ul>
-            <svg class="header__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-bag"></use>
-            </svg>
-            <svg class="header__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-user"></use>
-            </svg>
+            <div class="header__icons__thumb">
+              <svg class="header__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-bag"></use>
+              </svg>
+              <svg class="header__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
           </div>
         </nav>
       </header>
+
+      <!--Account Section-->
+
+      <section class="container">
+        <h2 class="account__title">Account</h2>
+        <div class="account__thumb">
+          <ul class="account_list">
+            <li class="account__item">Account Info</li>
+            <li class="account__item">Addresses</li>
+            <li class="account__item">Payments</li>
+            <li class="account__item current">Order History</li>
+          </ul>
+          <div class="orders__section">
+            <div class="orders__search__thumb">
+              <h3 class="section__title">Order History</h3>
+              <div class="search__input">
+                <svg class="header__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-search"></use>
+                </svg>
+                <p class="search__placeholder">Search</p>
+              </div>
+            </div>
+            <p class="section__description">
+              Currently you don’t have any recent orders available.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
