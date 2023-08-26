@@ -239,3 +239,45 @@ img {
   z-index: 3;
   position: relative;
 }
+
+.footer__form__item {
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: 36px;
+}
+
+.footer__form__label {
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.footer__form__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer__form__input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__submin__btn {
+  background: #fff;
+  display: flex;
+  width: 156px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  border: transparent;
+  gap: 15px;
+}
