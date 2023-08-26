@@ -94,6 +94,10 @@ img {
 
 /* Account */
 
+.account_section {
+  height: 794px;
+}
+
 .account__title {
   margin-top: 70px;
   margin-bottom: 50px;
@@ -173,4 +177,65 @@ img {
   font-family: Fira Sans;
   font-size: 20px;
   letter-spacing: -0.5px;
+}
+
+/* Footer */
+
+.footer {
+  height: 957px;
+  display: flex;
+}
+
+.footer__banner {
+  width: 50%;
+  height: 100%;
+  background-image: url(./images/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280%;
+  position: relative;
+}
+
+.footer__banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 38, 39, 0.7);
+  z-index: 2;
+}
+
+.footer__banner__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__form {
+  width: 50%;
+  height: 100%;
+  background-color: #1c1c1c;
+}
+
+.footer__title {
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: 102px;
+  font-weight: 500;
+  line-height: 90.49%; /* 92.3px */
+  z-index: 3;
+  position: relative;
+}
+
+.footer__privacy {
+  color: #fff;
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140.49%; /* 28.098px */
+  z-index: 3;
+  position: relative;
 }
