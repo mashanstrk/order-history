@@ -2,10 +2,11 @@
 
 html {
   box-sizing: border-box;
+  font-size: 20px;
 }
 
 body {
-  font-family: "DM Sans", "Times New Roman", Times, serif;
+  font-family: Fira Sans;
   background-color: #f4f4f4;
   overflow-y: scroll;
   margin: 0;
@@ -38,10 +39,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.icon {
-  fill: currentColor;
 }
 
 .container {
@@ -85,10 +82,29 @@ img {
   gap: 25px;
 }
 
+.bag__icon {
+  position: relative;
+}
+
+.quantity {
+  width: 23px;
+  height: 23px;
+  background-color: #334dcd;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+  letter-spacing: -0.35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 11px;
+  right: 98px;
+}
+
 .header__nav__item {
   color: #000;
-  font-family: Fira Sans;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
 }
 
@@ -103,8 +119,7 @@ img {
   margin-bottom: 50px;
 
   color: #232221;
-  font-family: Fira Sans;
-  font-size: 102px;
+  font-size: 5.1rem;
   line-height: 100%; /* 102px */
 }
 
@@ -116,8 +131,7 @@ img {
 
 .account__item {
   color: rgba(0, 0, 0, 0.5);
-  font-family: Fira Sans;
-  font-size: 24px;
+  font-size: 1.2rem;
   white-space: nowrap;
 }
 
@@ -129,15 +143,13 @@ img {
 .section__title {
   color: #000;
 
-  font-family: Fira Sans;
-  font-size: 36px;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .section__description {
   color: #000;
-  font-family: Fira Sans;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
 }
 
@@ -167,15 +179,13 @@ img {
 
 .search__placeholder {
   color: #6e6e73;
-  font-family: Fira Sans;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
 }
 
 .section__description {
   color: rgb(0, 0, 0, 0.5);
-  font-family: Fira Sans;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: -0.5px;
 }
 
@@ -187,8 +197,9 @@ img {
 }
 
 .footer__banner {
+  padding: 95px 91px 45px 80px;
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   background-image: url(./images/footer.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -214,57 +225,52 @@ img {
   justify-content: space-between;
 }
 
-.footer__form {
+.footer__form__section {
   width: 50%;
-  height: 100%;
   background-color: #1c1c1c;
+  padding: 149px 80px 79px 82px;
+}
+
+.footer__form__top {
+  margin-bottom: 213px;
 }
 
 .footer__title {
   color: #fff;
-  font-family: Fira Sans;
-  font-size: 102px;
+  font-size: 5.1rem;
   font-weight: 500;
   line-height: 90.49%; /* 92.3px */
   z-index: 3;
   position: relative;
+  max-width: 630px;
 }
 
 .footer__privacy {
   color: #fff;
-  font-family: Fira Sans;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 140.49%; /* 28.098px */
   z-index: 3;
   position: relative;
 }
 
-.footer__form__item {
+.footer__form__title {
   color: #fff;
-  font-family: Fira Sans;
-  font-size: 36px;
+  font-size: 1.8rem;
+  margin-bottom: 56px;
 }
 
 .footer__form__label {
-  color: #fff;
-  font-family: Fira Sans;
-  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.5px;
 }
 
 .footer__form__input::placeholder {
   color: rgba(255, 255, 255, 0.5);
-  font-family: Fira Sans;
-  font-size: 18px;
+  font-size: 0.9rem;
   font-weight: 400;
-}
-
-.footer__form__input {
-  border: none;
-  background-color: transparent;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer__submin__btn {
@@ -275,9 +281,51 @@ img {
   justify-content: center;
   align-items: center;
   color: #000;
-  font-family: Fira Sans;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   border: transparent;
   gap: 15px;
+  margin-top: 50px;
+}
+
+.footer__form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.column {
+  flex: calc(50% - 20px);
+  display: block;
+}
+
+.footer__form__input {
+  width: 100%;
+  padding: 7px 0px;
+  margin-top: 13px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_info {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social__links {
+  display: flex;
+  gap: 10px;
 }
