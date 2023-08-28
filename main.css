@@ -100,12 +100,14 @@ img {
 
 .bag__icon {
   position: relative;
+  cursor: pointer;
 }
 
 .user-icon {
   display: none;
   @media screen and (min-width: 800px) {
     display: block;
+    cursor: pointer;
   }
 }
 
@@ -138,7 +140,7 @@ img {
 .header__nav__item {
   color: #000;
   font-size: 1rem;
-  letter-spacing: -0.5px;
+  cursor: pointer;
 }
 
 /* Account */
@@ -183,12 +185,13 @@ img {
   padding: 5px 15px;
   color: #707070;
   font-size: 0.7rem;
-  border-bottom: 2px solid #e8e8e8;
+  border-bottom: 3px solid #e8e8e8;
   @media screen and (min-width: 800px) {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.2rem;
     white-space: nowrap;
     padding: 0;
+    border: none;
   }
 }
 
@@ -198,7 +201,9 @@ img {
 }
 
 .current__mobile {
-  border-bottom: 2px solid rgb(31, 67, 210);
+  border-bottom: 3px solid #334dcd;
+  color: #000;
+  font-weight: 500;
 }
 
 .mobile__account__thumb {
@@ -285,19 +290,29 @@ img {
 /* Footer */
 
 .footer {
-  height: 957px;
+  height: 610px;
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 800px) {
+    height: 957px;
+    flex-direction: row;
+  }
 }
 
 .footer__banner {
-  padding: 95px 91px 45px 80px;
-  width: 50%;
-  /* height: 100%; */
-  background-image: url(./images/footer.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 280%;
-  position: relative;
+  display: none;
+
+  @media screen and (min-width: 800px) {
+    padding: 95px 91px 45px 80px;
+    width: 50%;
+    background-image: url(./images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280%;
+    position: relative;
+    display: block;
+  }
 }
 
 .footer__banner::before {
@@ -319,13 +334,23 @@ img {
 }
 
 .footer__form__section {
-  width: 50%;
+  width: auto;
   background-color: #1c1c1c;
-  padding: 149px 80px 79px 82px;
+  padding: 73px 20px 80px 20px;
+
+  @media screen and (min-width: 800px) {
+    width: 50%;
+    padding: 149px 80px 79px 82px;
+  }
 }
 
 .footer__form__top {
-  margin-bottom: 213px;
+  display: none;
+
+  @media screen and (min-width: 800px) {
+    display: block;
+    margin-bottom: 213px;
+  }
 }
 
 .footer__title {
@@ -379,6 +404,7 @@ img {
   border: transparent;
   gap: 15px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .footer__form__wrapper {
@@ -403,22 +429,115 @@ img {
 }
 
 .footer__link {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1rem;
-  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+
+  @media screen and (min-width: 800px) {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+  }
 }
 
 .footer__contacts {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (min-width: 800px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .footer_info {
+  margin-top: 15px;
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  gap: 15px;
+
+  @media screen and (min-width: 800px) {
+    margin-top: 0;
+    gap: 20px;
+    flex-direction: row;
+  }
 }
 
-.footer__social__links {
+.footer__social {
+  margin-top: 80px;
   display: flex;
-  gap: 10px;
+  gap: 23px;
+
+  @media screen and (min-width: 800px) {
+    margin-top: 0;
+    gap: 10px;
+  }
+}
+
+.footer__social__link {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.8rem;
+
+  @media screen and (min-width: 800px) {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+  }
+}
+
+.footer__social__link:not(:last-child) {
+  @media screen and (max-width: 800px) {
+    border-right: 1px solid rgba(153, 153, 153, 0.5);
+    padding-right: 23px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 63px;
+
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.mobile__footer__info {
+  display: block;
+  height: 350px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 140.49%;
+  padding: 50px 20px;
+  background-color: #151515;
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.mobile__banner {
+  display: block;
+  background-color: #f5f5f5;
+  padding: 128px 20px;
+
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.mobile__banner__title {
+  color: #1c1c1c;
+  font-size: 2.1rem;
+  font-weight: 500;
+  letter-spacing: -1.05px;
+  margin-bottom: 21px;
+}
+
+.mobile__banner__contact__link {
+  color: #334dcd;
+  font-size: 0.9rem;
+  letter-spacing: -0.45px;
+}
+
+.mobile__banner__contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
