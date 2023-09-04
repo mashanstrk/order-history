@@ -60,6 +60,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 5;
 
   @media screen and (min-width: 800px) {
     height: 60px;
@@ -152,6 +154,7 @@ img {
   @media screen and (min-width: 800px) {
     padding-left: 60px;
     padding-right: 60px;
+    padding-top: 130px;
     height: 794px;
     background-color: #f4f4f4;
   }
@@ -162,12 +165,12 @@ img {
 
   @media screen and (min-width: 800px) {
     display: inline-block;
-    margin-top: 70px;
     margin-bottom: 50px;
 
     color: #232221;
     font-size: 5.1rem;
     line-height: 100%;
+    font-weight: 500;
   }
 }
 
@@ -209,7 +212,7 @@ img {
 .mobile__account__thumb {
   display: block;
   background: #f5f5f5;
-  padding: 15px 20px;
+  padding: 63px 20px 15px 20px;
 
   @media screen and (min-width: 800px) {
     display: none;
@@ -239,7 +242,6 @@ img {
 
   @media screen and (min-width: 800px) {
     display: flex;
-    align-items: center;
     gap: 150px;
   }
 
@@ -253,6 +255,7 @@ img {
   padding: 20px;
   @media screen and (min-width: 1200px) {
     width: 100%;
+    padding: 0px;
   }
 }
 
@@ -276,11 +279,18 @@ img {
   }
 }
 
+.search:focus {
+  outline: none;
+}
+
 .search {
   width: 3rem;
   background-color: transparent;
   border: transparent;
   padding-top: 5px;
+  color: #6e6e73;
+  font-size: 0.7rem;
+  letter-spacing: -0.35px;
 }
 
 .search__icon {
@@ -292,7 +302,6 @@ img {
 
 .search::placeholder {
   color: #6e6e73;
-  font-family: Fira Sans;
   font-size: 0.7rem;
   letter-spacing: -0.35px;
   @media screen and (min-width: 800px) {
@@ -416,6 +425,10 @@ img {
   font-weight: 400;
 }
 
+.footer__form__input:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+}
+
 .footer__submin__btn {
   background: #fff;
   display: flex;
@@ -451,6 +464,9 @@ img {
   border: none;
   background-color: transparent;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .footer__link {
