@@ -1,0 +1,14 @@
+$bp-mobile: 800px;
+$bp-desktop: 1200px;
+
+@mixin avarage-device {
+  @media (min-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}

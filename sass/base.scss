@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  font-family: Fira Sans;
+  background-color: #f4f4f4;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 0.6rem;
+
+  @media screen and (min-width: 800px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
