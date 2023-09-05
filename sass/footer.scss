@@ -63,7 +63,7 @@
 }
 
 .footer__title {
-  color: #fff;
+  color: var(--white-color);
   font-size: 5.1rem;
   font-weight: 500;
   line-height: 90.49%;
@@ -73,7 +73,7 @@
 }
 
 .footer__privacy {
-  color: #fff;
+  color: var(--white-color);
   font-size: 1rem;
   font-weight: 400;
   line-height: 140.49%;
@@ -82,7 +82,7 @@
 }
 
 .footer__form__title {
-  color: #fff;
+  color: var(--white-color);
   font-size: 1.8rem;
   margin-bottom: 2.8rem;
 }
@@ -95,23 +95,23 @@
 }
 
 .footer__form__input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--semiTransparentWhite);
   font-size: 0.9rem;
   font-weight: 400;
 }
 
 .footer__form__input:focus {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid var(--semiTransparentWhite);
 }
 
 .footer__submin__btn {
-  background: #fff;
+  background: var(--white-color);
   display: flex;
   width: 7.8rem;
   height: 2.5rem;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: var(--black-color);
   font-size: 1rem;
   font-weight: 400;
   border: transparent;
@@ -139,7 +139,7 @@
   border: none;
   background-color: transparent;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--semiTransparentWhite);
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -149,7 +149,7 @@
   font-size: 0.8rem;
 
   @include avarage-device {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--semiTransparentWhite);
     font-size: 1rem;
   }
 }
@@ -193,7 +193,7 @@
   font-size: 0.8rem;
 
   @include avarage-device {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--semiTransparentWhite);
     font-size: 1rem;
   }
 }

@@ -1,6 +1,6 @@
 .account_section {
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--white-color);
 
   @include avarage-device {
     padding-left: 3rem;
@@ -52,13 +52,13 @@
 }
 
 .current {
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
 }
 
 .current__mobile {
   border-bottom: 3px solid #334dcd;
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
 }
 
@@ -83,7 +83,7 @@
   font-weight: 500;
 
   @include avarage-device {
-    color: #000;
+    color: var(--black-color);
 
     font-size: 1.8rem;
     font-weight: 400;
@@ -164,7 +164,7 @@
 }
 
 .section__description {
-  color: rgb(0, 0, 0, 0.5);
+  color: var(--semiTransparentBlack);
   font-size: 0.7rem;
   letter-spacing: -0.35px;
 

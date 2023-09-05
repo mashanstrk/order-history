@@ -75,7 +75,7 @@
     width: 1.15rem;
     height: 1.15rem;
     background-color: #334dcd;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 50%;
     font-size: 0.7rem;
     letter-spacing: -0.35px;
@@ -89,7 +89,7 @@
 }
 
 .header__nav__item {
-  color: #000;
+  color: var(--black-color);
   font-size: 1rem;
   cursor: pointer;
 }

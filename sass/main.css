@@ -50,6 +50,13 @@ img {
   }
 }
 
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --semiTransparentWhite: rgba(255, 255, 255, 0.5);
+  --semiTransparentBlack: rgba(0, 0, 0, 0.5);
+}
+
 .header {
   width: 100%;
   height: 2.4rem;
@@ -133,7 +140,7 @@ img {
     width: 1.15rem;
     height: 1.15rem;
     background-color: #334dcd;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 50%;
     font-size: 0.7rem;
     letter-spacing: -0.35px;
@@ -147,14 +154,14 @@ img {
 }
 
 .header__nav__item {
-  color: #000;
+  color: var(--black-color);
   font-size: 1rem;
   cursor: pointer;
 }
 
 .account_section {
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 @media (min-width: 800px) {
   .account_section {
@@ -209,13 +216,13 @@ img {
 }
 
 .current {
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
 }
 
 .current__mobile {
   border-bottom: 3px solid #334dcd;
-  color: #000;
+  color: var(--black-color);
   font-weight: 500;
 }
 
@@ -242,7 +249,7 @@ img {
 }
 @media (min-width: 800px) {
   .section__title {
-    color: #000;
+    color: var(--black-color);
     font-size: 1.8rem;
     font-weight: 400;
   }
@@ -342,7 +349,7 @@ img {
 }
 
 .section__description {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--semiTransparentBlack);
   font-size: 0.7rem;
   letter-spacing: -0.35px;
 }
@@ -422,7 +429,7 @@ img {
 }
 
 .footer__title {
-  color: #fff;
+  color: var(--white-color);
   font-size: 5.1rem;
   font-weight: 500;
   line-height: 90.49%;
@@ -432,7 +439,7 @@ img {
 }
 
 .footer__privacy {
-  color: #fff;
+  color: var(--white-color);
   font-size: 1rem;
   font-weight: 400;
   line-height: 140.49%;
@@ -441,7 +448,7 @@ img {
 }
 
 .footer__form__title {
-  color: #fff;
+  color: var(--white-color);
   font-size: 1.8rem;
   margin-bottom: 2.8rem;
 }
@@ -454,29 +461,29 @@ img {
 }
 
 .footer__form__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--semiTransparentWhite);
   font-size: 0.9rem;
   font-weight: 400;
 }
 
 .footer__form__input::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--semiTransparentWhite);
   font-size: 0.9rem;
   font-weight: 400;
 }
 
 .footer__form__input:focus {
-  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid var(--semiTransparentWhite);
 }
 
 .footer__submin__btn {
-  background: #fff;
+  background: var(--white-color);
   display: flex;
   width: 7.8rem;
   height: 2.5rem;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: var(--black-color);
   font-size: 1rem;
   font-weight: 400;
   border: transparent;
@@ -504,7 +511,7 @@ img {
   border: none;
   background-color: transparent;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--semiTransparentWhite);
   font-size: 0.9rem;
   font-weight: 400;
 }
@@ -515,7 +522,7 @@ img {
 }
 @media (min-width: 800px) {
   .footer__link {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--semiTransparentWhite);
     font-size: 1rem;
   }
 }
@@ -563,7 +570,7 @@ img {
 }
 @media (min-width: 800px) {
   .footer__social__link {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--semiTransparentWhite);
     font-size: 1rem;
   }
 }
