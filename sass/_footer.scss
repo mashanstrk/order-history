@@ -13,7 +13,7 @@
   display: none;
 
   @include avarage-device {
-    padding: 4.75rem 4.55rem 2.25rem 4rem;
+    padding: 4.75rem 2rem 2.25rem 2rem;
     width: 50%;
     background-image: url(../images/footer.jpg);
     background-repeat: no-repeat;
@@ -21,6 +21,10 @@
     background-size: 280%;
     position: relative;
     display: block;
+  }
+
+  @include desktop-up {
+    padding: 4.75rem 4.55rem 2.25rem 4rem;
   }
 }
 
@@ -64,12 +68,20 @@
 
 .footer__title {
   color: var(--white-color);
-  font-size: 5.1rem;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 90.49%;
   z-index: 3;
   position: relative;
   max-width: 31.5rem;
+
+  @include desktop-up {
+    font-size: 4.1rem;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 5.1rem;
+  }
 }
 
 .footer__privacy {
@@ -102,6 +114,7 @@
 
 .footer__form__input:focus {
   outline: 2px solid var(--semiTransparentWhite);
+  border-bottom: 2px solid transparent;
 }
 
 .footer__submin__btn {
@@ -159,6 +172,11 @@
   flex-direction: column;
 
   @include avarage-device {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  @include desktop-up {
     justify-content: space-between;
     flex-direction: row;
   }
