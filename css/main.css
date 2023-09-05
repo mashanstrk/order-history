@@ -324,7 +324,6 @@ img {
 }
 
 .orders__search__thumb {
-  margin-bottom: 1.65rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,12 +433,39 @@ img {
   color: var(--semiTransparentBlack);
   font-size: 0.7rem;
   letter-spacing: -0.35px;
+  margin-top: 1.25rem;
 }
 @media (min-width: 800px) {
   .section__description {
     font-size: 1rem;
     letter-spacing: -0.5px;
+    margin-top: 1.65rem;
   }
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.8rem;
+  border-bottom: 3px solid #e6e6e6;
+}
+
+.filter__item {
+  color: var(--black-color);
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+}
+
+.order__card {
+  border: 1.192px solid #d9d9d9;
+  background: #fff;
 }
 
 .footer {
