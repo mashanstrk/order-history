@@ -379,7 +379,7 @@ img {
   .footer__banner {
     padding: 4.75rem 4.55rem 2.25rem 4rem;
     width: 50%;
-    background-image: url(/images/footer.jpg);
+    background-image: url(../images/footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 280%;
