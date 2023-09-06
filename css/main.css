@@ -191,15 +191,12 @@ img {
 }
 
 .account_section {
-  height: 100vh;
+  height: auto;
   background-color: var(--white-color);
 }
 @media (min-width: 800px) {
   .account_section {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 6.5rem;
-    height: 39.7rem;
+    padding: 6.5rem 3rem 5rem 3rem;
     background-color: #f4f4f4;
   }
 }
@@ -461,12 +458,29 @@ img {
   color: var(--black-color);
   font-size: 1rem;
   padding: 0.3rem 1.5rem;
+  position: relative;
+}
+
+.current__item::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #334dcd;
+  border-radius: 2px;
 }
 
 .order__card {
   border: 1.192px solid #d9d9d9;
   background: #fff;
-  padding: 1.6rem 1.5rem 0.85rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.order__card__thumb {
+  padding: 1.6rem 1.5rem 0.75rem 1.5rem;
 }
 
 .order__card__title__thumb {
@@ -520,13 +534,22 @@ img {
   display: block;
 }
 
+.order__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.75rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .order__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .order__item__name {
@@ -592,6 +615,9 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 }
 
 .purchase__details {
@@ -614,6 +640,8 @@ img {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0.75rem 1.5rem 0.85rem 1.5rem;
+  cursor: pointer;
 }
 
 .footer {

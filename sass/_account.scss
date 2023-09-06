@@ -1,12 +1,9 @@
 .account_section {
-  height: 100vh;
+  height: auto;
   background-color: var(--white-color);
 
   @include avarage-device {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 6.5rem;
-    height: 39.7rem;
+    padding: 6.5rem 3rem 5rem 3rem;
     background-color: #f4f4f4;
   }
 }
@@ -41,7 +38,6 @@
   color: #707070;
   font-size: 0.7rem;
   border-bottom: 3px solid #e8e8e8;
-
   @include avarage-device {
     color: rgba(0, 0, 0, 0.5);
     font-size: 1.2rem;
@@ -187,12 +183,29 @@
   color: var(--black-color);
   font-size: 1rem;
   padding: 0.3rem 1.5rem;
+  position: relative;
+}
+
+.current__item::after {
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #334dcd;
+  border-radius: 2px;
 }
 
 .order__card {
   border: 1.192px solid #d9d9d9;
   background: #fff;
-  padding: 1.6rem 1.5rem 0.85rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.order__card__thumb {
+  padding: 1.6rem 1.5rem 0.75rem 1.5rem;
 }
 
 .order__card__title__thumb {
@@ -236,11 +249,15 @@
   display: block;
 }
 
+.order__list {
+  display: flex;
+  gap: 0.75rem;
+  flex-direction: column;
+}
+
 .order__item {
   display: flex;
   gap: 2rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid #d9d9d9;
 }
 
 .order__item__name {
@@ -292,6 +309,9 @@
 .order__card__total {
   display: flex;
   justify-content: space-between;
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
 }
 
 .purchase__details {
@@ -307,4 +327,6 @@
 .purchase__details__btn {
   display: flex;
   justify-content: space-around;
+  padding: 0.75rem 1.5rem 0.85rem 1.5rem;
+  cursor: pointer;
 }
