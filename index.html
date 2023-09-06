@@ -85,27 +85,55 @@
               <li class="filter__item">Cancelled</li>
             </ul>
             <div class="order__card">
-              <div>
-                <span>Parcel picked up</span> <span>Return</span
-                ><span>ALE0000909F1FCC</span>
+              <div class="order__card__top__info">
+                <div class="order__card__title__thumb">
+                  <svg class="icon-mailbox" width="30" height="30">
+                    <use href="./images/icons.svg#icon-mailbox"></use>
+                  </svg>
+                  <span class="order__card__title">Parcel picked up</span>
+                </div>
+                <div>
+                  <span class="order__card__status">Return</span
+                  ><span class="order__card__code">ALE0000909F1FCC</span>
+                </div>
               </div>
-              <span>15 May. 2023 09:06AM</span>
+              <span class="order__card__date">15 May. 2023 09:06AM</span>
               <ul class="order__list">
                 <li class="order__item">
                   <svg class="icon-image" width="127" height="103">
                     <use href="./images/icons.svg#icon-image"></use>
                   </svg>
-                  <p class="order__item__name">
-                    Window handle, rotating screw, 7 mm x 30 mm, aluminum shell
-                  </p>
-                  <div><span>Part #</span><span>8950909</span></div>
-                  <div><span>1x40.00 USD</span><span>USD 40.00</span></div>
+                  <div class="order__card__info">
+                    <div>
+                      <p class="order__item__name">
+                        Window handle, rotating screw, 7 mm x 30 mm, aluminum
+                        shell
+                      </p>
+                      <div class="order__item__article__thumb">
+                        <span class="order__item__article">Part #</span
+                        ><span class="order__item__article">8950909</span>
+                      </div>
+                    </div>
+
+                    <div class="order__card__price__thumb">
+                      <span class="order__card__price">1x40.00 USD</span
+                      ><span class="order__card__price">USD 40.00</span>
+                    </div>
+                  </div>
                 </li>
               </ul>
-              <div>
-                <span>With delivery and taxes</span><span>USD 60.00</span>
+              <div class="order__card__total">
+                <span class="order__card__price__title"
+                  >With delivery and taxes</span
+                ><span class="order__card__price__sum">USD 60.00</span>
               </div>
-              <div><button>Purchase Details</button></div>
+              <div class="purchase__details__btn">
+                <button type="button" class="purchase__details">
+                  Purchase Details<svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-down"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
