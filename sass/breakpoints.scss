@@ -1,6 +1,12 @@
 $bp-mobile: 800px;
 $bp-desktop: 1200px;
 
+@mixin only-mobile {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
 @mixin avarage-device {
   @media (min-width: $bp-mobile) {
     @content;
