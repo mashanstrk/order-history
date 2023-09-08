@@ -329,7 +329,6 @@ img {
 }
 
 .orders__section {
-  width: auto;
   padding: 1rem;
 }
 @media (min-width: 1200px) {
