@@ -1,8 +1,15 @@
 $bp-mobile: 800px;
 $bp-desktop: 1200px;
+$bp-large-desktop: 1600px;
 
 @mixin only-mobile {
   @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin till-desktop {
+  @media (max-width: $bp-desktop) {
     @content;
   }
 }
@@ -15,6 +22,12 @@ $bp-desktop: 1200px;
 
 @mixin desktop-up {
   @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin large-device {
+  @media (min-width: $bp-large-desktop) {
     @content;
   }
 }

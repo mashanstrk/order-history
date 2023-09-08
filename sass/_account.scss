@@ -102,10 +102,15 @@
 
   @include avarage-device {
     display: flex;
-    gap: 7.5rem;
+    gap: 5rem;
+    justify-content: space-between;
   }
 
   @include desktop-up {
+    gap: 4rem;
+  }
+
+  @include large-device {
     gap: 14.65rem;
   }
 }
@@ -184,7 +189,7 @@
 
 .filter__list {
   display: none;
-  @include avarage-device {
+  @include desktop-up {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -203,7 +208,7 @@
   background: #f9f9f9;
   margin-top: 1.25rem;
   margin-bottom: 0.6rem;
-  @include avarage-device {
+  @include desktop-up {
     display: none;
   }
 }
@@ -231,7 +236,7 @@
   color: #707070;
   font-size: 0.7rem;
   line-height: 112.5%;
-  @include avarage-device {
+  @include desktop-up {
     display: none;
   }
 }
@@ -244,19 +249,19 @@
 .order__card {
   background: #fff;
 
-  @include avarage-device {
+  @include desktop-up {
     border: 1.192px solid #d9d9d9;
   }
 }
 
 .order__card:not(:first-child) {
-  @include only-mobile {
+  @include till-desktop {
     padding-top: 2rem;
   }
 }
 
 .order__card:not(:last-child) {
-  @include only-mobile {
+  @include till-desktop {
     padding-bottom: 2rem;
     border-bottom: 1px solid #d9d9d9;
   }
@@ -267,13 +272,14 @@
   flex-direction: column;
   margin-top: 1rem;
 
-  @include avarage-device {
+  @include desktop-up {
     gap: 1rem;
   }
 }
 
 .order__card__thumb {
   padding: 0 0 1rem 0;
+
   @include avarage-device {
     padding: 1.6rem 1.5rem 0.75rem 1.5rem;
   }
@@ -293,7 +299,7 @@
   font-weight: 500;
   letter-spacing: -0.4px;
 
-  @include avarage-device {
+  @include desktop-up {
     font-size: 1.2rem;
   }
 }
@@ -303,7 +309,7 @@
   font-size: 0.7rem;
   letter-spacing: -0.35px;
 
-  @include avarage-device {
+  @include desktop-up {
     font-size: 1rem;
     padding-right: 1rem;
     border-right: 1px solid #d9d9d9;
@@ -313,7 +319,7 @@
 
 .order__card__code {
   display: none;
-  @include avarage-device {
+  @include desktop-up {
     display: inline-block;
     color: #334dcd;
     font-size: 1rem;
@@ -335,7 +341,7 @@
   line-height: 18px;
   margin-bottom: 0.75rem;
   display: block;
-  @include avarage-device {
+  @include desktop-up {
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
@@ -351,21 +357,21 @@
   display: flex;
   gap: 0.5rem;
 
-  @include avarage-device {
+  @include desktop-up {
     gap: 2rem;
   }
 }
 
 .item__image {
   display: none;
-  @include avarage-device {
+  @include desktop-up {
     display: block;
   }
 }
 
 .item__image__mobile {
   display: block;
-  @include avarage-device {
+  @include desktop-up {
     display: none;
   }
 }
@@ -374,7 +380,7 @@
   display: flex;
   flex-direction: column-reverse;
   gap: 0.25rem;
-  @include avarage-device {
+  @include desktop-up {
     flex-direction: column;
     gap: 0.5rem;
   }
@@ -383,7 +389,7 @@
 .order__item__name {
   color: var(--black-color);
   font-size: 0.8rem;
-  @include avarage-device {
+  @include desktop-up {
     font-size: 1rem;
   }
 }
@@ -404,7 +410,7 @@
   flex-direction: column;
   width: 100%;
   gap: 1.25rem;
-  @include avarage-device {
+  @include desktop-up {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -414,7 +420,7 @@
   color: #707070;
   font-size: 0.7rem;
 
-  @include avarage-device {
+  @include desktop-up {
     color: var(--black-color);
     font-size: 1rem;
   }
@@ -431,7 +437,7 @@
   font-size: 0.6rem;
   letter-spacing: -0.3px;
 
-  @include avarage-device {
+  @include desktop-up {
     font-size: 1rem;
     letter-spacing: -0.5px;
     color: var(--black-color);
@@ -442,7 +448,7 @@
   color: var(--black-color);
   font-size: 0.8rem;
   font-weight: 500;
-  @include avarage-device {
+  @include desktop-up {
     font-size: 1rem;
     letter-spacing: -0.5px;
   }
@@ -473,7 +479,7 @@
   font-size: 0.8rem;
   font-weight: 500;
 
-  @include avarage-device {
+  @include desktop-up {
     font-size: 0.9rem;
     font-weight: 400;
   }
@@ -486,7 +492,7 @@
   cursor: pointer;
   border: 1px solid #dedede;
   margin-top: 0.5rem;
-  @include avarage-device {
+  @include desktop-up {
     border: none;
     margin-top: 0;
     padding: 0.75rem 1.5rem 0.85rem 1.5rem;
